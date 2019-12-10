@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">forja</string>
+    <string name="quatity">QUANTITY</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_first_name">First name</string>
+    <string name="hint_last_name">Last name</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="logout">logout</string>
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="popular">Popular Movies</string>
+    <string name="top_rated">Top Rated Movies</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="action_setting">Settings</string>
+    <string name="name_movie">Movie title</string>
+    <string name="movie_details">Movie details</string>
+    <string name="plot">Plot Synopsis</string>
+    <string name="rating">User Rating</string>
+    <string name="relase">Release Date</string>
+    <string name="pref_sort_order_label">Sort Order</string>
+    <string name="pref_sort_order_key">sortOrder</string>
+    <string name="pref_most_popular">Most Popular</string>
+    <string name="pref_highest_rated">Highest Rated</string>
+</resources>

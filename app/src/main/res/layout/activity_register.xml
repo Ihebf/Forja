@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:gravity="center"
+    android:id="@+id/linearLayout2">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="218dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/forja"
+        tools:layout_conversion_absoluteHeight="51dp"
+        tools:layout_conversion_absoluteWidth="181dp" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/rLastName"
+        android:layout_width="359dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:hint="@string/hint_last_name"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428"
+        tools:layout_conversion_absoluteHeight="64dp"
+        tools:layout_conversion_absoluteWidth="40dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/rFirstName"
+        android:layout_width="359dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:hint="@string/hint_first_name"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/rLastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_conversion_absoluteHeight="64dp"
+        tools:layout_conversion_absoluteWidth="40dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/rEditEmail"
+        android:layout_width="359dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rLastName"
+        tools:layout_conversion_absoluteHeight="64dp"
+        tools:layout_conversion_absoluteWidth="40dp" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/rEditPassword"
+        android:layout_width="359dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rEditEmail"
+        tools:layout_conversion_absoluteHeight="64dp"
+        tools:layout_conversion_absoluteWidth="105dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegister"
+        android:layout_width="175dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rEditPassword"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="96dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLinkToLoginScreen"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/btn_link_to_login"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="203dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
